@@ -8,7 +8,7 @@ import numpy as np
 from skimage.transform import resize
 from skimage import img_as_ubyte
 import torch
-from sync_batchnorm import DataParallelWithCallback
+from sync_batchnorm_dataparallelwithcallback import DataParallelWithCallback
 
 from generator import OcclusionAwareGenerator
 from keypoint_detector import KPDetector
