@@ -12,8 +12,8 @@ pathToVideo = "1.mp4"
 
 
 from demo import load_checkpoints
-generator, kp_detector = load_checkpoints(config_path='vox-256.yaml',
-                            checkpoint_path='pathToModel')
+generator, kp_detector = load_checkpoints(config_path='config.yaml',
+                                          checkpoint_path='pathToModel')
 
 def display(source, driving, generated=None):
     fig = plt.figure(figsize=(8 + 4 * (generated is not None), 6))
